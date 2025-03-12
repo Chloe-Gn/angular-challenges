@@ -1,9 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  input,
-  output,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, output } from '@angular/core';
 
 @Component({
   selector: 'app-list-item',
@@ -21,7 +16,4 @@ import {
 })
 export class ListItemComponent {
   delete = output<void>();
-
-  readonly id = input<number>();
-  readonly name = input<string>();
 }

@@ -15,9 +15,9 @@ import { CardRowDirective } from './card-row.directive';
     <ng-content select="img" />
     <section>
       @for (item of items(); track item.id) {
-        <ng-template
+        <ng-container
           [ngTemplateOutlet]="rowTemplate()"
-          [ngTemplateOutletContext]="{ $implicit: item }"></ng-template>
+          [ngTemplateOutletContext]="{ $implicit: item }"></ng-container>
       }
     </section>
     <button

@@ -1,4 +1,3 @@
-import { AsyncPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import {
   FakeHttpService,
@@ -29,7 +28,7 @@ import { ListItemComponent } from '../../ui/list-item/list-item.component';
       }
     `,
   ],
-  imports: [CardComponent, ListItemComponent, AsyncPipe, CardRowDirective],
+  imports: [CardComponent, ListItemComponent, CardRowDirective],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class StudentCardComponent {

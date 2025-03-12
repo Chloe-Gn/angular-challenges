@@ -12,6 +12,6 @@ import { TeacherCardComponent } from './component/teacher-card/teacher-card.comp
       <app-city-card />
     </div>
   `,
-  imports: [TeacherCardComponent, StudentCardComponent, CityCardComponent],
+  imports: [TeacherCardComponent, CityCardComponent, StudentCardComponent],
 })
 export class AppComponent {}

@@ -1,4 +1,3 @@
-import { AsyncPipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import {
   FakeHttpService,
@@ -28,7 +27,7 @@ import { ListItemComponent } from '../../ui/list-item/list-item.component';
     `,
   ],
   standalone: true,
-  imports: [ListItemComponent, AsyncPipe, CardRowDirective, CardComponent],
+  imports: [ListItemComponent, CardRowDirective, CardComponent],
 })
 export class TeacherCardComponent {
   private http = inject(FakeHttpService);
